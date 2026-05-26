@@ -38,6 +38,8 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
         headless: true,
+        screenshot: 'only-on-failure',
+        video: 'retain-on-failure',
        },
     }
 
