@@ -13,12 +13,12 @@ const webTest = test.extend<MyFixtures>({
 
    loginPage: async ({ page }, use) => {
 
-        await use(new LoginPage(page));
+        await use(new LoginPage(page)); // for creating login page object and using it in test
     },
 
     homePage: async ({ page }, use) => {
 
-        await use(new HomePage(page));
+        await use(new HomePage(page)); // for creating home page object and using it in test
      }
 
 });
