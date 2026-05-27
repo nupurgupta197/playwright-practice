@@ -10,6 +10,6 @@ webTest.beforeEach('Setup', async ({ loginPage }) => {
     await loginPage.loginToApp(userName, password);
 });
 
-webTest.only('Home Test', async ({ homePage }) => {
+webTest('Home Test', async ({ homePage }) => {
     await homePage.homePageVerify(userName, password);
 });
